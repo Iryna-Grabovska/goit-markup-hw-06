@@ -15,6 +15,7 @@ a {
   --bg-cl-icon: #f5f4fa;
   --icon-cl: #afb1b8;
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --border-modal: rgba(33, 33, 33, 0.2);
 }
 html {
   box-sizing: border-box;
@@ -747,6 +748,7 @@ p {
   color: var(--main-text-cl);
 }
 .modal-desc {
+  padding-top: 4px;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -754,17 +756,36 @@ p {
 
   color: var(--pargf-cl);
 }
+.form-field input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--border-modal);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.feedback-textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--icon-cl);
+}
+.feedback-textarea {
+  resize: none;
+  width: 100%;
+  border: 1px solid var(--border-modal);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 .modal-icons {
   position: absolute;
 }
-.placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
+.checkbox-form {
+  display: flex;
+  align-items: center;
 }
 .checkbox-modal {
+  margin-left: 7px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
