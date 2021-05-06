@@ -503,6 +503,7 @@ p {
 .footer-contakts-title:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .footer-social {
   width: 206px;
   display: block;
@@ -540,6 +541,27 @@ p {
   color: var(--text-white);
   background-color: var(--btn-cl);
 }
+.footer-subscribtion {
+  display: block;
+  padding-left: 90px;
+}
+.footer-social-form {
+  display: flex;
+}
+.user-subscribtion {
+}
+.footer-social-form .herro-button {
+  text-align: center;
+}
+.user-subscribtion input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
 .contacts {
   margin-top: 20px;
   font-style: inherit;
@@ -748,7 +770,6 @@ p {
   color: var(--main-text-cl);
 }
 .modal-desc {
-  padding-top: 4px;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -756,9 +777,13 @@ p {
 
   color: var(--pargf-cl);
 }
+.form-field {
+  position: relative;
+}
 .form-field input {
   width: 100%;
   height: 40px;
+  margin-bottom: 10px;
   border: 1px solid var(--border-modal);
   box-sizing: border-box;
   border-radius: 4px;
@@ -778,20 +803,55 @@ p {
 }
 
 .modal-icons {
+  display: block;
   position: absolute;
+  bottom: 43px;
+  left: 15px;
 }
-.checkbox-form {
-  display: flex;
-  align-items: center;
+.form-input:focus ~ .modal-icons {
+  fill: var(--btn-cl);
 }
-.checkbox-modal {
-  margin-left: 7px;
+
+.form-input:focus {
+  border-color: var(--btn-cl);
+}
+.form-input {
+  display: block;
+  padding-top: 11px;
+  padding-right: 12px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: var(--animation);
+}
+.checkbox-link {
+  color: var(--btn-cl);
+}
+.checkbox-label {
+  padding-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--pargf-cl);
 }
-.checkbox-link {
-  color: var(--btn-cl);
+
+.checkbox-label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--main-text-cl);
+  border-radius: 3px;
+}
+
+.checkbox:checked + .checkbox-label::before {
+  background-image: url(./imeges/icons.svg#icon-Vector-12);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: var(--btn-cl);
+  border-color: var(--btn-cl);
 }
