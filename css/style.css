@@ -795,6 +795,7 @@ p {
   border: 1px solid var(--border-modal);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 }
 .feedback-textarea::placeholder {
   font-size: 14px;
@@ -822,9 +823,7 @@ p {
 .form-input:focus ~ .modal-icons {
   fill: var(--btn-cl);
 }
-.form-field .form-input:focus {
-  background-color: var(--btn-cl);
-}
+
 .form-input:focus {
   color: var(--btn-cl);
   border-color: var(--btn-cl);
