@@ -247,8 +247,6 @@ p {
   border-style: none;
   transition: background-color var(--animation), color var(--animation);
 }
-/*#endregion herro*/
-/*#region features*/
 .features {
   background: var(--text-white);
   padding-top: 94px;
@@ -795,13 +793,16 @@ p {
   color: var(--icon-cl);
 }
 .feedback-textarea {
+  padding: 12px 16px;
   resize: none;
   width: 100%;
   border: 1px solid var(--border-modal);
   box-sizing: border-box;
   border-radius: 4px;
 }
-
+.feedback-textarea:focus {
+  border-color: var(--btn-cl);
+}
 .modal-icons {
   display: block;
   position: absolute;
@@ -813,6 +814,7 @@ p {
 }
 
 .form-input:focus {
+  color: var(--btn-cl);
   border-color: var(--btn-cl);
 }
 .form-input {
@@ -830,14 +832,19 @@ p {
   color: var(--btn-cl);
 }
 .checkbox-label {
-  padding-bottom: 30px;
+  display: flex;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--pargf-cl);
 }
-
+.checkbox {
+  display: inline-block;
+  margin-left: 8px;
+}
 .checkbox-label::before {
   content: "";
   display: inline-block;
@@ -848,7 +855,7 @@ p {
 }
 
 .checkbox:checked + .checkbox-label::before {
-  background-image: url(./imeges/icons.svg#icon-Vector-12);
+  background-image: url(../imeges/cheaked.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
