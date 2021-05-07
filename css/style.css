@@ -810,6 +810,7 @@ p {
   border: 1px solid var(--border-modal);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 }
 .feedback-textarea:focus {
   border-color: var(--btn-cl);
