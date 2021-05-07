@@ -547,8 +547,13 @@ p {
   display: flex;
 }
 
-.footer-social-form .herro-button {
-  text-align: center;
+.footer-btn {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.user-subscribtion {
+  display: flex;
 }
 .user-subscribtion input {
   width: 358px;
@@ -560,10 +565,6 @@ p {
 }
 .subscribtion-input {
   padding: 15px 16px;
-}
-.subscribtion-input:valid:not(:placeholder-shown):focus {
-  color: green;
-  border-bottom-color: green;
 }
 .contacts {
   margin-top: 20px;
@@ -787,6 +788,7 @@ p {
 }
 .form-field {
   position: relative;
+  margin-bottom: 8px;
 }
 .form-field input {
   width: 100%;
@@ -854,7 +856,7 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   align-items: center;
-
+  justify-content: center;
   color: var(--pargf-cl);
 }
 .checkbox {
