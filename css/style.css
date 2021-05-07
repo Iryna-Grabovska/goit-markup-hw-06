@@ -546,8 +546,7 @@ p {
 .footer-social-form {
   display: flex;
 }
-.user-subscribtion {
-}
+
 .footer-social-form .herro-button {
   text-align: center;
 }
@@ -559,7 +558,13 @@ p {
   background-color: transparent;
   margin-right: 10px;
 }
-
+.subscribtion-input {
+  padding: 15px 16px;
+}
+.subscribtion-input:valid:not(:placeholder-shown):focus {
+  color: green;
+  border-bottom-color: green;
+}
 .contacts {
   margin-top: 20px;
   font-style: inherit;
@@ -755,17 +760,22 @@ p {
   border-radius: 50%;
   cursor: pointer;
 }
+.btn-close:focus,
+.btn-close:hover {
+  fill: var(--btn-cl);
+}
 .madal-container {
   padding: 40px;
 }
 .modal-title {
+  margin: 0;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--main-text-cl);
+  padding-bottom: 12px;
 }
 .modal-desc {
   margin-bottom: 4px;
@@ -781,7 +791,7 @@ p {
 .form-field input {
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   border: 1px solid var(--border-modal);
   box-sizing: border-box;
   border-radius: 4px;
@@ -806,7 +816,7 @@ p {
 .modal-icons {
   display: block;
   position: absolute;
-  bottom: 43px;
+  bottom: 30px;
   left: 15px;
 }
 .form-input:focus ~ .modal-icons {
@@ -830,20 +840,22 @@ p {
 }
 .checkbox-link {
   color: var(--btn-cl);
+  margin-right: ;
 }
 .checkbox-label {
+  display: flex;
+  padding-top: 20px;
   display: flex;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: center;
+  align-items: center;
 
   color: var(--pargf-cl);
 }
 .checkbox {
   display: inline-block;
-  margin-left: 8px;
 }
 .checkbox-label::before {
   content: "";
@@ -852,6 +864,7 @@ p {
   height: 16px;
   border: 1px solid var(--main-text-cl);
   border-radius: 3px;
+  margin-right: 8px;
 }
 
 .checkbox:checked + .checkbox-label::before {
@@ -861,4 +874,8 @@ p {
   background-size: contain;
   background-color: var(--btn-cl);
   border-color: var(--btn-cl);
+}
+.btn {
+  display: block;
+  margin: 0 auto;
 }
