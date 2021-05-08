@@ -821,7 +821,7 @@ p {
 .modal-icons {
   display: block;
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 15px;
 }
 .form-input:focus ~ .modal-icons {
